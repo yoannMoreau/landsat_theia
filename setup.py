@@ -48,7 +48,7 @@ setup(name="landsat_theia",
       license="CCO",
       platforms="Posix; ",
       install_requires=[
-          "osgeo"
+          "osgeo",
           "GDAL==1.11.0",
           "python-dateutil==2.2",
           "numpy"
