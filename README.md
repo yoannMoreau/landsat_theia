@@ -10,7 +10,7 @@ Use pip to install landsat-theia:
 $: sudo apt-add-repository ppa:ubuntugis/ubuntugis-unstable <br>
 $: sudo apt-get update <br>
 $: sudo apt-get install git python-pip build-essential libssl-dev libffi-dev python-dev python-gdal libgdal1-dev gdal-bin  geotiff-bin urllib2 base64 -y <br>
-$: sudo pip install -U git+git://github.com/yoannMoreau/landsat-theia.git <br>
+$: sudo pip install -U git+git://github.com/yoannMoreau/landsat_theia.git <br>
 
 
 Make sure you have these dependencies:
