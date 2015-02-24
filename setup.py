@@ -49,7 +49,6 @@ setup(name="landsat_theia",
       platforms="Posix; ",
       install_requires=[
           "GDAL==1.11.0",
-          "gsutil==4.4",
           "python-dateutil==2.2",
           "numpy"
       ],
