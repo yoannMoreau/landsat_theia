@@ -20,9 +20,9 @@ GDAL <br>
 Then Run:
 
 $: pip install -U  git+git://github.com/yoannMoreau/landsat-theia.git
-Alternatively, you can also download the package and run:
+Alternatively, you can also download the source and use your own python
 
-$: python setup.py install
+$: python python/landsat_theia.py -h
 
 <h2>Overview: What can landsat-util do?</h2>
 
