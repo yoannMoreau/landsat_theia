@@ -19,9 +19,9 @@ GDAL <br>
 
 Then Run:
 
-$: pip install -U  git+git://github.com/yoannMoreau/landsat-theia.git
-Alternatively, you can also download the source and use your own python
+$: pip install -U  git+git://github.com/yoannMoreau/landsat_theia.git <br>
 
+Alternatively, you can also download the source and use your own python
 $: python python/landsat_theia.py -h
 
 <h2>Overview: What can landsat-theia do?</h2>
