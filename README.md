@@ -4,31 +4,29 @@ Tools for download and search satellite images from theia based on the tools fro
 
 <h2>Installation<b></h2>
 
-Use pip to install landsat-util:
+Use pip to install landsat-theia:
 
 <b>Ubuntu</b><br>
 $: sudo apt-add-repository ppa:ubuntugis/ubuntugis-unstable <br>
 $: sudo apt-get update <br>
 $: sudo apt-get install git python-pip build-essential libssl-dev libffi-dev python-dev python-gdal libgdal1-dev gdal-bin  geotiff-bin urllib2 base64 -y <br>
-$: sudo pip install -U git+git://github.com/yoannMoreau/landsat-theia.git <br>
+$: sudo pip install -U git+git://github.com/yoannMoreau/landsat_theia.git <br>
 
 
 Make sure you have these dependencies:
 
 GDAL <br>
-ImageMagick <br>
-Orfeo-40<br>
 
 Then Run:
 
-$: pip install -U  git+git://github.com/yoannMoreau/landsat-theia.git
-Alternatively, you can also download the package and run:
+$: pip install -U  git+git://github.com/yoannMoreau/landsat_theia.git <br>
 
-$: python setup.py install
+Alternatively, you can also download the source and use your own python
+$: python python/landsat_theia.py -h
 
-<h2>Overview: What can landsat-util do?</h2>
+<h2>Overview: What can landsat-theia do?</h2>
 
-landsat-theia has two main functions, it's based on lansat-utils developp for searching, downloading and processing Landsat8 imagery. Process possibility has not been maintained in that version due to high possibility of gdal toolbox. theia is a CNES plaform which distribute freely landsat imagery with atmospheric correction (based on SMAC and temporal algorithm), snow/cloud/shadow mask on a sentinel-2 tiles format. All scene on France are treated within a timelaps on 1.5 month.
+landsat-theia has two main functions, it's based on lansat-theia developp for searching, downloading and processing Landsat8 imagery. Process possibility has not been maintained in that version due to high possibility of gdal toolbox. theia is a CNES plaform which distribute freely landsat imagery with atmospheric correction (based on SMAC and temporal algorithm), snow/cloud/shadow mask on a sentinel-2 tiles format. All scene on France are treated within a timelaps on 1.5 month.
 Web interface could be used for manually download at http://spirit.cnes.fr/resto/Landsat/
 More detail on the blog : http://www.cesbio.ups-tlse.fr/multitemp/
 
@@ -50,7 +48,7 @@ query based on sémantic description of your needs such as
 for Date and location. Unfortunately it should be in french until soon next update on theia site
 "LANDSAT7 images entre janvier et juin 2009"
 "LANDSAT8 images sur  Toulouse acquises en mai 2013 "
-Custom shapefile: Use a tool such as http://geojson.io/ to generate custom shapefiles bounding your geographical region of interest. Landsat-util will download tiles within this shapefile.
+Custom shapefile: Use a tool such as http://geojson.io/ to generate custom shapefiles bounding your geographical region of interest. Landsat-theia will download tiles within this shapefile.
 Additionally filter your search using the following parameters:
 
 Start and end dates for when imagery was taken
