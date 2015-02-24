@@ -13,7 +13,6 @@ import shutil
 from tempfile import mkdtemp
 
 from osgeo import ogr, osr
-import settings
 
 
 class Clipper(object):
