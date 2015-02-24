@@ -15,9 +15,10 @@ $: sudo pip install -U git+git://github.com/yoannMoreau/landsat-theia.git <br>
 
 Make sure you have these dependencies:
 
-GDAL
-ImageMagick
-Orfeo-40
+GDAL <br>
+ImageMagick <br>
+Orfeo-40<br>
+
 Then Run:
 
 $: pip install -U  git+git://github.com/yoannMoreau/landsat-theia.git
@@ -36,7 +37,7 @@ Download landsat images.
 
 Help: Type landsat_theia -h for detailed usage parameters.
 
-the command Line of landsat_theia is create as :
+the command Line of landsat_theia is create as :<br>
 <b>landsat_theia [ACTION {download/search}] [parameters of ACTION] [location{query/shapefile or sceneID for download}]</b>
 
 <h2>Step 1: Search</h2>
