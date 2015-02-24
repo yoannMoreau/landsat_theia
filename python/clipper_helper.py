@@ -12,7 +12,12 @@ import errno
 import shutil
 from tempfile import mkdtemp
 
-from osgeo import ogr, osr
+try:
+    from osgeo import ogr
+    from osgeo import osr
+except:
+    import ogr
+    import osr
 
 
 class Clipper(object):
@@ -23,7 +28,8 @@ class Clipper(object):
     def shapefile(self, file):
         """
         reprojette en WGS84 et recupere l'extend
-        """
+        """ 
+        
         driver = ogr.GetDriverByName('ESRI Shapefile')
         dataset = driver.Open(file)
         if dataset is not None:
