@@ -4,7 +4,7 @@ Tools for download and search satellite images from theia based on the tools fro
 
 <h2>Installation<b></h2>
 
-Use pip to install landsat-util:
+Use pip to install landsat-theia:
 
 <b>Ubuntu</b><br>
 $: sudo apt-add-repository ppa:ubuntugis/ubuntugis-unstable <br>
