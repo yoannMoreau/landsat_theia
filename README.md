@@ -16,8 +16,6 @@ $: sudo pip install -U git+git://github.com/yoannMoreau/landsat-theia.git <br>
 Make sure you have these dependencies:
 
 GDAL <br>
-ImageMagick <br>
-Orfeo-40<br>
 
 Then Run:
 
