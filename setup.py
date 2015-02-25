@@ -41,7 +41,7 @@ setup(name="landsat_theia",
       long_description=readme(),
       author="Yoann M",
       author_email="yoann.moreau@gmail.com",
-      scripts=["bin/landsat_theia"],
+      scripts=["python/landsat_theia.py","python/gs_helper.py","python/clipper_helper.py","python/general_helper.py","python/search_helper.py"],
       url="https://github.com/yoannMoreau/landsat_theia",
       packages=["python"],
       include_package_data=True,
@@ -52,5 +52,5 @@ setup(name="landsat_theia",
           "python-dateutil==2.2",
           "numpy"
       ],
-      classifier = ["Development Status :: 3 - Alpha"]
+      classifiers = ["Development Status :: 3 - Alpha"]
       )
