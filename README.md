@@ -12,7 +12,6 @@ $: sudo apt-get update <br>
 $: sudo apt-get install git python-pip build-essential libssl-dev libffi-dev python-dev python-gdal libgdal1-dev gdal-bin  geotiff-bin -y <br>
 $: sudo pip install -U git+git://github.com/yoannMoreau/landsat_theia.git <br>
 
-
 Make sure you have these dependencies:
 
 GDAL <br>
@@ -20,8 +19,13 @@ GDAL <br>
 Then Run:
 
 $: pip install -U  git+git://github.com/yoannMoreau/landsat_theia.git <br>
+or 
+$: pip install landsat_theia
 
 Alternatively, you can also download the source and use your own python
+$: mkdir PATH/TO/INSTALL 
+$: git clone git+git://github.com/yoannMoreau/landsat_theia.git
+$: cd  PATH/TO/INSTALL/landsat_theia
 $: python python/landsat_theia.py -h
 
 <h2>Overview: What can landsat-theia do?</h2>
