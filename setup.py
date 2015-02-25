@@ -52,4 +52,5 @@ setup(name="landsat_theia",
           "python-dateutil==2.2",
           "numpy"
       ],
+      classifier = ["Development Status :: 3 - Alpha"]
       )
