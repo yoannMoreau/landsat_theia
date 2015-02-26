@@ -22,7 +22,7 @@ $: pip install -U  git+git://github.com/yoannMoreau/landsat_theia.git <br>
 or 
 $: pip install landsat_theia
 
-For some reason GDAL could have difficulties to install due to headers link missing. 
+For some reason GDAL could have difficulties to install due to headers link missing (cpl_port.h). 
 Alternatively, you can also download the source and use your own python installation.
 
 $: mkdir PATH/TO/INSTALL 
