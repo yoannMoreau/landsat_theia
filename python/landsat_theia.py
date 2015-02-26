@@ -179,17 +179,14 @@ def main(args):
                                 print (i)
                     
                     if args.download:
-                        gs = GsHelper()
+                        gs = GsHelper(ZIP_DIR)
                         if (args.password) and (args.user):
                             print('Starting the download:')
-                            for item in result['results']:
+                            for item in result['downloads']:
                                 login=args.user
                                 mdp=args.password
-                                gs.single_download(login,mdp,item['download']['url'],
-                                                   item['sceneID'],ZIP_DIR)
-                                print ("%s have been downloaded ... continuing downloading" % item['sceneID'])
-                                
-                                
+                                gs.single_download(login,mdp,item['download'],item['id'],ZIP_DIR)
+                                print ("%s have been downloaded ... continuing downloading" % item['id'])
                             print("%s images were downloaded"
                                   % result['total'])
                             exit("The downloaded images are located here: %s" %

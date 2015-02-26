@@ -50,6 +50,9 @@ class Search(object):
             result['total'] = len(r_dict['features'])
             result['limit'] = limit
             result['ID']=[i['id'] for i in r_dict['features']]
+            result['downloads']=[{"download" : i['properties']['services']['download']['url'],
+                                 "id" : i['id']}
+                                  for i in r_dict['features']]
             result['results'] = {
                                 "features": [{
                                   'properties':{'sceneID': i['id'],

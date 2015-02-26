@@ -23,7 +23,7 @@ class GsHelper(object):
         self.zip_dir=download_dir
         check_create_folder(download_dir)
 
-    def single_download(self,username,password,download , name,ZIP_DIR):
+    def single_download(self,username,password,download ,name,ZIP_DIR):
 
         """ Download single image from Landsat on Google Storage
         Arguments:
