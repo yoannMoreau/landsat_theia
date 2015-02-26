@@ -22,7 +22,9 @@ $: pip install -U  git+git://github.com/yoannMoreau/landsat_theia.git <br>
 or 
 $: pip install landsat_theia
 
-Alternatively, you can also download the source and use your own python
+For some reason GDAL could have difficulties to install due to headers link missing. 
+Alternatively, you can also download the source and use your own python installation.
+
 $: mkdir PATH/TO/INSTALL 
 $: git clone git+git://github.com/yoannMoreau/landsat_theia.git
 $: cd  PATH/TO/INSTALL/landsat_theia
