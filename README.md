@@ -4,31 +4,12 @@ Tools for download and search satellite images from theia based on the tools fro
 
 <h2>Installation<b></h2>
 
-Use pip to install landsat-theia:
-
-<b>Ubuntu</b><br>
-$: sudo apt-add-repository ppa:ubuntugis/ubuntugis-unstable <br>
-$: sudo apt-get update <br>
-$: sudo apt-get install git python-pip build-essential libssl-dev libffi-dev python-dev python-gdal libgdal1-dev gdal-bin  geotiff-bin -y <br>
-$: sudo pip install -U git+git://github.com/yoannMoreau/landsat_theia.git <br>
-
-Make sure you have these dependencies:
-
-GDAL <br>
-
-Then Run:
-
-$: pip install -U  git+git://github.com/yoannMoreau/landsat_theia.git <br>
-or 
-$: pip install landsat_theia
-
-For some reason GDAL could have difficulties to install due to headers link missing (cpl_port.h). 
-Alternatively, you can also download the source and use your own python installation.
-
 $: mkdir PATH/TO/INSTALL 
 $: git clone git+git://github.com/yoannMoreau/landsat_theia.git
 $: cd  PATH/TO/INSTALL/landsat_theia
 $: python python/landsat_theia.py -h
+
+( or you cas Use pip to install landsat-theia )
 
 <h2>Overview: What can landsat-theia do?</h2>
 
