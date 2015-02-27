@@ -4,10 +4,10 @@ Tools for download and search satellite images from theia based on the tools fro
 
 <h2>Installation<b></h2>
 
-$: mkdir PATH/TO/INSTALL <br>
-$: git clone git+git://github.com/yoannMoreau/landsat_theia.git <br>
-$: cd  PATH/TO/INSTALL/landsat_theia <br>
-$: python python/landsat_theia.py -h <br>
+mkdir PATH/TO/INSTALL <br>
+git clone git+git://github.com/yoannMoreau/landsat_theia.git <br>
+cd  PATH/TO/INSTALL/landsat_theia <br>
+python python/landsat_theia.py -h <br>
 
 ( or you cas Use pip to install landsat-theia )
 
