@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 =======
 # landsat_theia
 Tools for download and search satellite images from theia based on the tools from developpement seed (landsat-utils)
@@ -92,4 +92,4 @@ To Do List
 
 Improve console output
 Maintain with bug error 
->>>>>>> 0f2f3e9b821d9f99a70b9c22815bc893bf134693
+
