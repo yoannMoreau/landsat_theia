@@ -35,7 +35,7 @@ def readme():
         return f.read()
 
 setup(name="landsat_theia",
-      version='0.0.1',
+      version='0.0.6',
       description="A utility to search, download THEIA Landsat " +
       " satellite imagery",
       long_description=readme(),
@@ -48,9 +48,10 @@ setup(name="landsat_theia",
       license="CCO",
       platforms="Posix; ",
       install_requires=[
-          "GDAL==1.11.0",
+          "GDAL",
           "python-dateutil==2.2",
-          "numpy"
+          "numpy",
+	  "requests"
       ],
       classifiers = ["Development Status :: 3 - Alpha"]
       )

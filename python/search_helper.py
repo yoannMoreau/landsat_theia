@@ -8,6 +8,7 @@
 
 import json
 import requests
+import requests.exceptions
 
 class Search(object):
 
@@ -34,11 +35,20 @@ class Search(object):
 
         # Have to manually build the URI to bypass requests URI encoding
         # The api server doesn't accept encoded URIs
-        r = requests.get('%s?%s&&maxRecords=%s' % (self.api_url,
+        #r = requests.get('%s?%s&&maxRecords=%s' % (self.api_url,
+        #                                            search_string,
+        #                                            limit))
+        
+        try:
+            r = requests.get('%s?%s&&maxRecords=%s' % (self.api_url,
                                                     search_string,
-                                                    limit))
-
+                                                    limit)) 
+            r.raise_for_status()
+        except requests.HTTPError, e:
+            exit ("site is not available")
+            
         r_dict = json.loads(r.text)
+        
         result={}
         
         if  (r_dict['features'] == 0):
@@ -50,6 +60,9 @@ class Search(object):
             result['total'] = len(r_dict['features'])
             result['limit'] = limit
             result['ID']=[i['id'] for i in r_dict['features']]
+            result['downloads']=[{"download" : i['properties']['services']['download']['url'],
+                                 "id" : i['id']}
+                                  for i in r_dict['features']]
             result['results'] = {
                                 "features": [{
                                   'properties':{'sceneID': i['id'],
