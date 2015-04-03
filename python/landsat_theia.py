@@ -60,7 +60,7 @@ search, download, and process Landsat imagery.
 
 
 def args_options():
-    parser = argparse.ArgumentParser(prog='landsat',
+    parser = argparse.ArgumentParser(prog='landsat_theia.py',
                         formatter_class=argparse.RawDescriptionHelpFormatter,
                         description=textwrap.dedent(DESCRIPTION))
 
@@ -165,8 +165,8 @@ def main(args):
             result = s.search(args.limit,args.start,args.end,clipper)
             try:
                 if result['status'] == 'SUCCESS':
-                    if result['total'] > 100:
-                        exit('Too many results. Please narrow your search or limit your query with -l option')
+                    if result['total'] > 200:
+                        exit('Too many results. Please narrow your search or limit your query with -l options')
                     else:
                         if args.outputRepository:
                             with open(ZIP_DIR+'/result.geojson', 'w') as outfile:
